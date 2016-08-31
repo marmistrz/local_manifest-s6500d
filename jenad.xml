@@ -8,10 +8,13 @@
 
     <project path="hardware/atheros/wlan" name="midzan21/android_hardware_atheros_wlan_cm" revision="master" />
     <project path="hardware/qcom/display-legacy" name="midzan21/android_hardware_qcom_display-legacy" revision="master" />
-    <!--<project path="hardware/qcom/media-legacy" name="midzan21/android_hardware_qcom_media-legacy" revision="master" />-->
+    <!-- artifact from the original local manifest:
+    <project path="hardware/qcom/media-legacy" name="midzan21/android_hardware_qcom_media-legacy" revision="master" />
+    -->
 
     <project path="hardware/qcom/fm-mr1" name="legaCyMod/android_hardware_qcom_fm" revision="cm-11.0" />
     <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" revision="cm-11.0" />
     
-    <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" revision="cm-11.0" />
+    <!-- This probably is not needed, but without it, the build fails. I don't know why the goldfish stuff is needed, but simple solutions are the best ones -->
+    <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" revision="cm-11.0" /> 
 </manifest>
