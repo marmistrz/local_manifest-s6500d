@@ -15,9 +15,6 @@
     <project path="hardware/qcom/fm-mr1" name="legaCyMod/android_hardware_qcom_fm" revision="cm-11.0" />
     <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" revision="cm-11.0" />
     
-    <!-- Use a fork of hybris-boot until the PR for jena is merged into upstream -->
-    <project path="hybris/hybris-boot" name="marmistrz/hybris-boot" revision="master" /> 
-    
     <!-- This probably is not needed, but without it, the build fails. I don't know why the goldfish stuff is needed, but simple solutions are the best ones -->
     <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" revision="cm-11.0" /> 
 </manifest>
