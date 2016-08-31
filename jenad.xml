@@ -12,4 +12,6 @@
 
     <project path="hardware/qcom/fm-mr1" name="legaCyMod/android_hardware_qcom_fm" revision="cm-11.0" />
     <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" revision="cm-11.0" />
+    
+    <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" revision="cm-11.0" />
 </manifest>
