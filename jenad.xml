@@ -17,4 +17,8 @@
     
     <!-- This probably is not needed, but without it, the build fails. I don't know why the goldfish stuff is needed, but simple solutions are the best ones -->
     <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" revision="cm-11.0" /> 
+    
+    <!-- We need a patched recovery, otherwise the build fails (probably a mismatch of msm_ion.h revisions) -->
+    <remove-project name="CyanogenMod/android_bootable_recovery" />
+    <project path="bootable/recovery" name="marmistrz/android_bootable_recovery" revision="cm-11.0-hybris-jenad" />
 </manifest>
